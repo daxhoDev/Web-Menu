@@ -1,5 +1,5 @@
 body {
-  background: image-set("./salsa.jpg") center/cover no-repeat fixed, red;
+  background: url("salsa.jpg") center/cover no-repeat fixed, red;
   font-family: Arial, Helvetica, sans-serif;
   padding: 20px;
 }
