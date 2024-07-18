@@ -10,10 +10,10 @@ body {
 .cafe-menu {
   width: 85%;
   max-width: 31rem;
-  background-color: darkkhaki;
+  background-color: darkgoldenrod;
   padding: 1rem 1.5rem;
   border-radius: 12px;
-  box-shadow: 0 0 30px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 12px 12px rgba(0, 0, 0, 0.5);
   text-align: center;
 }
 
