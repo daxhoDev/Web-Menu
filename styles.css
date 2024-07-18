@@ -1,90 +1,97 @@
 body {
-  background: url("salsa.jpg") center/cover no-repeat fixed, red;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("salsa.jpg") center/cover no-repeat border-box fixed, darkred;
+  font-family: Helvetica, sans-serif;
 }
 
-h1 {
-  font-size: 45px;
-  margin-top: 1px;
-  margin-bottom: 1px;
-}
-
-hr {
-  background-color: darkred;
-  border-color: darkred;
-  padding: 1px;
-}
-
-.bajomenu{
-  margin-top: 5px;
-  width: 60%;
-  padding: 0;
-}
-
-h2 {
-  font-size: 30px;
-  font-style: italic;
-  margin-top: 20px;
-  margin-bottom: 1px;
-}
-
-h3 {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-}
-
-h1,
-h2,
-h3,
-p {
+.cafe-menu {
+  width: 85%;
+  max-width: 31rem;
+  background-color: darkkhaki;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 30px 20px rgba(0, 0, 0, 0.5);
   text-align: center;
 }
 
-.established {
+.cafe-menu__header {
+  margin: 0.5rem 0 1.5rem 0;
+}
+
+.header__cafe-name {
+  font-size: 3.5rem;
+  margin: 0 0 0.3rem 0;
+}
+
+.header__established-mark {
   font-style: italic;
-  margin-top: 1px;
-  margin-bottom: 20px;
+  font-size: 1.5rem;
+  margin: 0;
 }
 
-.menu {
-  width: 80%;
-  height: 80%;
-  max-width: 500px;
-  background-color: darkkhaki;
-  margin: 0 auto;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 30px 20px #500;
+.divider {
+  border: 2px solid darkred;
 }
 
-.elemento p {
-  display: inline-block;
-  margin: 5px 0;
+.offers {
+  margin: 1.5rem 0;
 }
 
-.entrante,
-.pizza,
-.bebida {
-  text-align: left;
-  width: 74%;
+.offers__menu-title {
+  font-size: 2.3rem;
 }
 
-.precio {
-  text-align: right;
-  width: 24%;
+.offer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  margin: 0.8rem 0;
+  padding: 0;
 }
 
-/*FOOTER*/
+.offer__article-title {
+  font-family: Impact, sans-serif;
+  font-size: 1.5rem;
+  margin: 0.8rem;
+}
 
-a {
+.offer__food,
+.offer__price {
+  margin: 0;
+}
+
+
+.offer__price{
+  font-style: italic;
+}
+
+.cafe-menu__footer{
+  margin: 1.5rem 0 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.footer__link {
+  color: darkred;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer__link:hover,
+.footer__link:active{
+
+  color: red;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+
+}
+
+.footer__link:visited {
   color: black;
 }
 
-a:visited {
-  color: darkred;
-}
-
-.despedida {
+.footer__goodbye {
   font-weight: bold;
-  margin-bottom: 1px;
 }
